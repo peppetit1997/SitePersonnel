@@ -1,3 +1,4 @@
+/* Gradient Background */
 .gradient-background {
   background: linear-gradient(300deg, black, silver, darkgrey);
   background-size: 180% 180%;
@@ -14,6 +15,8 @@
     background-position: 0% 50%;
   }
 }
+
+/* General Styles */
 html,
 body {
   height: 100%;
@@ -22,13 +25,13 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: darkgrey;
 }
+
 .main-content {
   flex: 1;
 }
-.main-appearance {
-  background-color: darkgrey;
-}
+
 p {
   text-align: justify;
   font-size: 1.15rem;
@@ -36,9 +39,7 @@ p {
   margin-bottom: 1.5rem;
 }
 
-main {
-  height: 100%;
-}
+/* Headings */
 h1,
 h2,
 h3,
@@ -47,44 +48,39 @@ h5,
 h6 {
   font-weight: 600;
   color: black;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
+
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.8rem;
 }
-h4 {
-  font-size: 1.5rem;
-}
-h5 {
-  font-size: 1.2rem;
-}
-h6 {
-  font-size: 1rem;
+
+/* Lists */
+ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.btn {
-  font-weight: 600;
-}
-.img-wrap {
-  float: left;
-  padding: 1rem;
-  margin: 0 15px 15px 0;
-}
-/* Add custom CSS styles if needed */
-.img-wrap {
-  float: left;
-  margin: 0 15px 15px 0;
+ul ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Add spacing between image and paragraph */
-.img-wrap + p {
-  margin-top: 15px;
+li {
+  margin-bottom: 0.5rem;
 }
+
+/* Footer */
 .footer {
   display: flex;
   flex-direction: row; /* Arrange items horizontally */
@@ -115,23 +111,29 @@ h6 {
   color: #fff; /* Text color on hover/focus */
   border-color: black; /* Border color on hover/focus */
 }
+
+/* Project Section */
 .project {
   margin-bottom: 2rem;
 }
+
 .project img {
   max-width: 100%;
   height: auto;
 }
+
 .project-content {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
 }
+
 .project-content img {
   flex: 1;
   max-width: 300px;
   margin-right: 1rem;
 }
+
 .project-content .text {
   flex: 2;
 }
